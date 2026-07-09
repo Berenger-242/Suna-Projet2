@@ -1,10 +1,10 @@
-/* ================= Stylisation des marges de notre sites ===========================*/
+/* Stylisation des marges de notre sites*/
 
 *{ 
     box-sizing:border-box; 
 }
 
-/*===================== PERSONALISATION DU BODY. =======================*/
+/*PERSONALISATION DU BODY.*/
 
 body{
     margin:0;
@@ -13,7 +13,7 @@ body{
     font-family:'Poppins Bold', sans-serif;
 }
 
-/* ==================== Stylisation de tous liens, listes et buttons du site ================*/
+/* /* Stylisation de tous liens, listes et buttons du site */
 
 a{ 
     color:inherit; 
@@ -31,7 +31,7 @@ button{
     cursor:pointer; 
 }
 
-/* =================  Ligne de séparation du footer ===================== */
+/* Ligne de séparation du footer */
 
 .separateur{
     height:1px;
@@ -39,7 +39,7 @@ button{
     background: #000000;
 }
 
-/* ================= Stylisation du header  ================= */
+/* Stylisation du header*/
 
 header{
     position:sticky;
@@ -48,7 +48,7 @@ header{
     background: #F3F4F6;
 }
 
-/* ============== Stylisation de la div contenant tous les élements du menu ===============*/
+/*Stylisation de la div contenant tous les élements du menu */
 
 .nav-content{
     max-width:1200px;
@@ -98,7 +98,7 @@ nav.liens a.active{
     gap:18px;
 }
 
-/* ============== Stylisation du bouton mon panier ==================== */
+/*Stylisation du bouton mon panier */
 
 .btn{
     position:relative;
@@ -120,7 +120,7 @@ nav.liens a.active{
 }
 
 
-/* ================= DEMO FILLER (retirer sur le site final) ================= */
+/*DEMO FILLER (retirer sur le site final)*/
 .demo-space{
     max-width:1200px;
     margin:0 auto;
@@ -130,7 +130,7 @@ nav.liens a.active{
     font-size:0.9rem;
 }
 
-/* ================= Stylisation du footer ================= */
+/*Stylisation du footer */
 
 footer{
 background: #F3F4F6;
@@ -187,4 +187,242 @@ color: #1E3A8A;
     line-height:1.7;
     color:#000000;
     margin-bottom:18px;
+}
+
+
+
+
+/*Projet : Landing Page E-commerce, Dév 2 : Alty DELLOT-MVOUMINA-Page d'acccueil */
+
+/* Réinitialisation */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Style général */
+body{
+    font-family:'Inter',sans-serif;
+    background:#F3F4F6;
+    color:#374151;
+    line-height:1.6;
+}
+
+/* Les images occupent toute leur largeur */
+img{
+    width:100%;
+    display:block;
+}
+
+/* Les liens */
+a{
+    text-decoration:none;
+}
+
+/*HERO BANNER */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    padding:80px 10%;
+    background:#ffffff;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-family:'Poppins',sans-serif;
+    font-size:3rem;
+    color:#1E3A8A;
+    margin-bottom:20px;
+}
+
+.hero-text span{
+    color:#2563EB;
+}
+
+.hero-text p{
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+.hero-image{
+    flex:1;
+}
+
+/*BOUTON */
+
+.btn{
+    display:inline-block;
+    background:#2563EB;
+    color:white;
+    padding:15px 30px;
+    border-radius:8px;
+    transition:.4s;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#1E3A8A;
+    transform:translateY(-4px);
+}
+
+/*PRODUITS VEDETTES*/
+
+.featured{
+    padding:80px 10%;
+}
+
+.featured h2{
+    text-align:center;
+    font-size:2.3rem;
+    margin-bottom:40px;
+    color:#1E3A8A;
+    font-family:'Poppins';
+}
+
+/* CSS GRID */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+
+}
+
+/* Cartes */
+
+.card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.4s;
+
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+}
+
+.card h3{
+    padding:20px;
+    color:#2563EB;
+
+}
+
+.card p{
+    padding:0 20px;
+}
+.card span{
+    display:block;
+    padding:20px;
+    color:#10B981;
+    font-weight:bold;
+    font-size:20px;
+
+}
+
+/*PROMOTION*/
+.promo{
+    padding:80px 10%;
+}
+.promo-box{
+    background:#2563EB;
+    color:white;
+    text-align:center;
+    padding:60px;
+    border-radius:12px;
+}
+
+.promo-box h2{
+    font-size:2.4rem;
+    margin-bottom:20px;
+}
+
+.promo-box p{
+    margin-bottom:30px;
+}
+
+/*TEMOIGNAGES*/
+.testimonials{
+    padding:80px 10%;
+}
+.testimonials h2{
+    text-align:center;
+    color:#1E3A8A;
+    margin-bottom:40px;
+    font-size:2.2rem;
+}
+
+/* FLEXBOX */
+.clients{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.avis{
+    width:320px;
+    background:white;
+    border-radius:12px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.4s;
+
+}
+
+.avis:hover{
+    transform:scale(1.05);
+}
+
+.avis h4{
+    margin-top:20px;
+    color:#2563EB;
+}
+
+/*RESPONSIVE TABLETTE*/
+@media(max-width:1024px){
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.products{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/*RESPONSIVE MOBILE*/
+
+@media(max-width:768px){
+.hero h1{
+font-size:2.2rem;
+}
+.products{
+grid-template-columns:1fr;
+}
+
+.clients{
+flex-direction:column;
+align-items:center;
+
+}
+
+.btn{
+display:block;
+width:100%;
+text-align:center;
+
+}
+
 }

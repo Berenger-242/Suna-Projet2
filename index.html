@@ -6,9 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Suna shop</title>
 <link href="style.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-
 <header>
     <div class="wax-strip"></div>
     <div class="nav-content">
@@ -19,6 +22,7 @@
         <a href="#catalogue">Catalogue</a>
         <a href="#fiche-produit">Fiche produit</a>
         <a href="#contact">Contact</a>
+        <a href="#promotion">Promotion</a>
     </nav>
 
     <div class="nav-actions">
@@ -27,6 +31,73 @@
         </button>
     </div>
     </div>
+
+    <!--HERO BANNER-->
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Bienvenue chez <span>Suna shop</span></h1>
+                <p>Découvrez les meilleurs produits électroniques aux meilleurs prix. Smartphones, ordinateurs, téléviseurs, accessoires et bien plus encore. Notre priorité est de vous offrir la qualité, la garantie et une livraison rapide partout au Congo. </p>
+                <a href="#produits" class="btn">Découvrir nos produits</a>
+            </div>
+            <div class="hero-image">
+                <img src="boutique.jpeg" alt="Image Boutique">
+            </div>
+        </section>
+        <!--PRODUITS VEDETTES-->
+        <section id="produits" class="featured">
+            <h2>Nos Produits Vedettes</h2>
+            <div class="products">
+                <article class="card">
+                    <img src="pc.jpeg" alt="Ordinateur">
+                    <h3>Ordinateur HP</h3>
+                    <p> Intel Core i7  16Go RAM  SSD 512Go</p>
+                    <span>580 000 FCFA</span>
+                </article>
+                <article class="card">
+                    <img src="phone.jpeg" alt="iPhone">
+                    <h3>iPhone 15 Pro</h3>
+                    <p>256Go • Garantie 12 mois</p>
+                    <span>900 000 FCFA</span>
+                </article>
+                <article class="card">
+                    <img src="tv.jpeg" alt="Télévision">
+                    <h3>Smart TV Samsung</h3>
+                    <p>Ultra HD 55 pouces</p>
+                    <span>480 000 FCFA</span>
+                </article>
+            </div>
+        </section>
+
+        <!--PROMOTIONS-->
+        <section class="promo" id="promotion">
+            <div class="promo-box">
+                <h2>Promotion Exceptionnelle</h2>
+                <p>Profitez d'une réduction allant jusqu'à <strong>40%</strong> sur une sélection de smartphones, ordinateurs et accessoires.</p>
+                <a href="#" class="btn">
+                    Acheter maintenant
+                </a>
+            </div>
+        </section>
+        <!--TEMOIGNAGES-->
+        <section class="testimonials">
+            <h2>Avis de nos clients </h2>
+            <div class="clients">
+                <article class="avis">⭐
+                    <p>Très satisfait de mon ordinateur. Livraison rapide et excellent service.</p>
+                    <h4> Jean M. </h4>
+                </article>
+                <article class="avis"> ⭐⭐
+                    <p>Des produits originaux et des prix très intéressants. </p>
+                    <h4>Grâce L. </h4>
+                </article>
+                <article class="avis">⭐⭐⭐
+                    <p> Je recommande cette boutique à tous. </p>
+                    <h4> Patrick N. </h4>
+                </article>
+            </div>
+        </section>
+    </main>
 
 </header>
 
