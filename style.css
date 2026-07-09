@@ -119,6 +119,33 @@ nav.liens a.active{
     border-color: #000000;
 }
 
+.menu-burger{
+    display:none;
+    background:none;
+    border:none;
+    font-size:28px;
+    color:#1E3A8A;
+}
+
+
+@media(max-width:768px){
+
+    nav.liens{
+        display:none;
+    }
+
+
+    .menu-burger{
+        display:block;
+    }
+
+
+    .nav-content{
+        padding:16px;
+    }
+
+}
+
 
 /* ================= DEMO FILLER (retirer sur le site final) ================= */
 .demo-space{
