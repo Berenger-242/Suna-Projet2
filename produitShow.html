@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suna shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/pages/detailProduit.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-content">
+            <h1 class="logo">
+                <a href="#accueil">Suna Shop</a>
+            </h1>
+            <nav class="liens">
+                <a href="index.html" class="active">Accueil</a>
+                <a href="#catalogue">Catalogue</a>
+                <a href="produitShow.html">Fiche produit</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button type="button" class="btn" aria-label="Voir le panier">
+                    🛒 Mon Panier
+                </button>
+            </div>
+            <button class="menu-burger" aria-label="Ouvrir le menu">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container-box-detail-product">
+            <h2 class="show-product-title-head">AJOUTER AU <span class="show-product-span">PANIER</span></h2>
+            <div class="limited_class">
+                <div class="contenair_product">
+
+                    <div class="big-image-box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDD-8IE87cFH09gvMpa7uRoym2asYhLZ0vXUJcFmE6ZhMfgbqA2FNqlj4&s=10"
+                            alt="Basket de running rouge - Vue principale" class="image_big">
+
+                        <div class="small-images-box">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDD-8IE87cFH09gvMpa7uRoym2asYhLZ0vXUJcFmE6ZhMfgbqA2FNqlj4&s=10"
+                                alt="Basket de running rouge - Vue de profil" class="image_min">
+                            <img src="https://static01.galaxus.com/productimages/1/7/4/7/8/7/0/4/2/7/2/1/3/1/2/9/7/5/1/46cb50be-de26-4ef1-9338-97323b22852a.jpg_720.jpeg"
+                                alt="Basket de running verte - Variante couleur" class="image_min">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKHQW930A2NjS6L_VFGIuVeChJVDPxGfoTVHfVEuILynIdm0hYIW2dWRhX&s=10"
+                                alt="Basket de running blanche - Variante couleur" class="image_min">
+                        </div>
+                    </div>
+
+                    <article class="product-card">
+                        <h2 class="title-product">Basket Sport Ultra</h2>
+                        <hr>
+                        <p class="price-product">120,00 €</p>
+
+                        <p class="description-product">
+                            Découvrez un confort exceptionnel et un amorti performant conçus pour vos entraînements
+                            quotidiens et vos sessions de running. Fabriquée avec des matériaux respirants et une
+                            semelle ultra légère, cette chaussure s'adapte parfaitement à la forme de votre pied pour un
+                            maintien optimal à chaque foulée.
+                        </p>
+
+                        <form id="panier-qte" class="panier-qte">
+                            <input type="number" name="qte" id="qte" value="1" min="1">
+                            <button type="submit">valider</button>
+                        </form>
+                    </article>
+
+                </div>
+            </div>
+
+        </div>
+
+        <section>
+            <h2 class="suggestions-product-title">Ceci pourrais vous interessez</h2>
+
+            <div class="gird-product-suggestion limited_class">
+                <article
+                    style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvq6McCOCQ-AgDJTNb9TCnNK2UqugJ9nch-LmVyoVM0L8FE5rq8MFKLRmX&s=10') center/cover no-repeat;">
+                    <div class="information-product">
+                        <h2 class="title_mini_product">Basket Running</h2>
+                        <span class="description_mini_product">Confort optimal et amorti performant pour la course au
+                            quotidien.</span>
+                        <span class="price_mini_product">85$</span>
+                        <a class="btn-add-cart" href="#">Panier &plus;</a>
+                    </div>
+                </article>
+
+                <article
+                    style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjRTsKab-8j774A48ABSyF58fTc1ZF1jiIBLIUPrqTZw&s=10') center/cover no-repeat;">
+                    <div class="information-product">
+                        <h2 class="title_mini_product">Sac à Main Cuir</h2>
+                        <span class="description_mini_product">Élégant sac en cuir véritable avec finitions dorées et
+                            bandoulière.</span>
+                        <span class="price_mini_product">120$</span>
+                        <a class="btn-add-cart" href="#">Panier &plus;</a>
+                    </div>
+                </article>
+
+                <article
+                    style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvcsACMaO86zqlAopRjH-bCmQdGfyyKXMiJWD8JhkyaeHKT0TBcDpOups&s=10') center/cover no-repeat;">
+                    <div class="information-product">
+                        <h2 class="title_mini_product">Montre Chrono</h2>
+                        <span class="description_mini_product">Design minimaliste étanche avec cadran en acier
+                            inoxydable brossé.</span>
+                        <span class="price_mini_product">150$</span>
+                        <a class="btn-add-cart" href="#">Panier &plus;</a>
+                    </div>
+                </article>
+
+                <article
+                    style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://static01.galaxus.com/productimages/1/7/4/7/8/7/0/4/2/7/2/1/3/1/2/9/7/5/1/46cb50be-de26-4ef1-9338-97323b22852a.jpg_720.jpeg') center/cover no-repeat;">
+                    <div class="information-product">
+                        <h2 class="title_mini_product">Basket Sport</h2>
+                        <span class="description_mini_product">Semelle ultra légère et tissu respirant idéal pour le
+                            fitness.</span>
+                        <span class="price_mini_product">95$</span>
+                        <a class="btn-add-cart" href="#">Panier &plus;</a>
+                    </div>
+                </article>
+
+                <article
+                    style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQigeEM7orjXlDMYJVTfD2iA9QQeMRGcDYLan5GsYVyJJBwEqmUqDUbBA2C&s=10') center/cover no-repeat;">
+                    <div class="information-product">
+                        <h2 class="title_mini_product">Sac à Dos Urbain</h2>
+                        <span class="description_mini_product">Compartiment ordinateur rembourré et poches ergonomiques
+                            étanches.</span>
+                        <span class="price_mini_product">65$</span>
+                        <a class="btn-add-cart" href="#">Panier &plus;</a>
+                    </div>
+                </article>
+
+                <article
+                    style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbTjbYVTAfpN_ThjVIT0tmhevMK36BKcOFxDprpZo22fJY-67QqWJGsNc&s=10') center/cover no-repeat;">
+                    <div class="information-product">
+                        <h2 class="title_mini_product">Montre Luxe</h2>
+                        <span class="description_mini_product">Mouvement automatique d'exception avec bracelet en cuir
+                            véritable.</span>
+                        <span class="price_mini_product">290$</span>
+                        <a class="btn-add-cart" href="#">Panier &plus;</a>
+                    </div>
+                </article>
+
+                <article
+                    style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLIm3ROBWiRrbe2vuuj_UVQAVlsmQISw7zNCOX5rRTNQ&s=10') center/cover no-repeat;">
+                    <div class="information-product">
+                        <h2 class="title_mini_product">Basket Streetwear</h2>
+                        <span class="description_mini_product">Style urbain rétro avec détails contrastés et confort
+                            quotidien durable.</span>
+                        <span class="price_mini_product">110$</span>
+                        <a class="btn-add-cart" href="#">Panier &plus;</a>
+                    </div>
+                </article>
+
+                <article
+                    style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDf9S7eRcpiPdcTVniER5omf72hVfPrf7_95yuyZGDVKSHHn8StxzDTQ&s=10') center/cover no-repeat;">
+                    <div class="information-product">
+                        <h2 class="title_mini_product">Pochette Soirée</h2>
+                        <span class="description_mini_product">Format compact élégant pailleté avec fine chaîne
+                            métallique amovible.</span>
+                        <span class="price_mini_product">45$</span>
+                        <a class="btn-add-cart" href="#">Panier &plus;</a>
+                    </div>
+                </article>
+
+
+                <article
+                    style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUNpsCB0M0E5bY-Sh-Blh9j77I-4kAN_wwm-e_zTi26g&s=10') center/cover no-repeat;">
+                    <div class="information-product">
+                        <h2 class="title_mini_product">Montre Sport</h2>
+                        <span class="description_mini_product">Chronomètre étanche avec bracelet en silicone robuste
+                            pour les activités intenses.</span>
+                        <span class="price_mini_product">135$</span>
+                        <a class="btn-add-cart" href="#">Panier &plus;</a>
+                    </div>
+                </article>
+
+                <article
+                    style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK5uejJ_-JwwGZpHUftYSiqln5MkVUudm5rN4Kg8tEV2yZtYabKy03rYU&s=10') center/cover no-repeat;">
+                    <div class="information-product">
+                        <h2 class="title_mini_product">Sac Cabas Toile</h2>
+                        <span class="description_mini_product">Grand volume pratique avec anses renforcées pour le
+                            quotidien et le shopping.</span>
+                        <span class="price_mini_product">55$</span>
+                        <a class="btn-add-cart" href="#">Panier &plus;</a>
+                    </div>
+                </article>
+
+
+
+
+
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <div class="separateur"></div>
+        <div class="rubrique">
+            <div class="rubrique-info">
+                <a href="#accueil" class="logo">Suna Shop</a>
+                <p>
+                    Suna Shop est une boutique en ligne moderne qui propose des produits de qualité avec une expérience
+                    d'achat simple, rapide et sécurisée.
+                </p>
+            </div>
+            <div class="rubrique-col">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#catalogue">Catalogue</a></li>
+                    <li><a href="#fiche-produit">Fiche produit</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="rubrique-col">
+                <h2>Informations</h2>
+                <ul>
+                    <li><a href="#livraison">Livraison</a></li>
+                    <li><a href="#retours">Retours et échanges</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#cgv">Conditions générales</a></li>
+                </ul>
+            </div>
+            <div class="rubrique-col contact">
+                <h2>Contact</h2>
+                <address>
+                    📍 Brazzaville, République du Congo <br>
+                    📧contact@sunashop.com <br>
+                    📞 +242 06 420 13 32
+                </address>
+            </div>
+            <div class="rubrique-col contact">
+                <h2>Suivez-nous</h2>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
