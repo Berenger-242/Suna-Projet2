@@ -1,10 +1,10 @@
-/* ================= Stylisation des marges de notre sites ===========================*/
+/* Stylisation des marges de notre sites*/
 
 * {
     box-sizing: border-box;
 }
 
-/*===================== PERSONALISATION DU BODY. =======================*/
+/*PERSONALISATION DU BODY.*/
 
 body {
     margin: 0;
@@ -13,7 +13,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* ==================== Stylisation de tous liens, listes et buttons du site ================*/
+/* /* Stylisation de tous liens, listes et buttons du site */
 
 a {
     color: inherit;
@@ -31,7 +31,7 @@ button {
     cursor: pointer;
 }
 
-/* =================  Ligne de séparation du footer ===================== */
+/* Ligne de séparation du footer */
 
 .separateur {
     height: 1px;
@@ -39,7 +39,7 @@ button {
     background: #000000;
 }
 
-/* ================= Stylisation du header  ================= */
+/* Stylisation du header*/
 
 header {
     position: sticky;
@@ -49,7 +49,7 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
 }
 
-/* ============== Stylisation de la div contenant tous les élements du menu ===============*/
+/*Stylisation de la div contenant tous les élements du menu */
 
 .nav-content {
     max-width: 1200px;
@@ -117,7 +117,7 @@ nav.liens a.active {
     gap: 18px;
 }
 
-/* ============== Stylisation du bouton mon panier ==================== */
+/*Stylisation du bouton mon panier */
 
 .btn {
     display: flex;
@@ -174,7 +174,7 @@ nav.liens a.active {
     font-size: 0.9rem;
 }
 
-/* ================= Stylisation du footer ================= */
+/*Stylisation du footer */
 
 footer {
     background: #F3F4F6;
