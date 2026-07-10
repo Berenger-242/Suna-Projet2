@@ -288,3 +288,646 @@ footer {
 
 }
 
+/*Stylisation de la page d'accueil*/
+
+/* Stylisation des marges de notre sites*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*PERSONALISATION DU BODY.*/
+
+body {
+    margin: 0;
+    background: #ffffff;
+    color: #1E3A8A;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* /* Stylisation de tous liens, listes et buttons du site */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    font-family: "Poppins SemiBold";
+    cursor: pointer;
+}
+
+/* Ligne de séparation du footer */
+
+.separateur {
+    height: 1px;
+    width: 100%;
+    background: #000000;
+}
+
+/* Stylisation du header*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #F3F4F6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+}
+
+/*Stylisation de la div contenant tous les élements du menu */
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #1E3A8A;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    margin: 0;
+    transition: .3s;
+}
+
+.logo:hover {
+
+    color: #2563EB;
+
+}
+
+
+nav.liens {
+    display: flex;
+    gap: 8px;
+    transition: .3s;
+}
+
+nav.liens a {
+    position: relative;
+    color: #1E3A8A;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 10px 16px;
+    border-radius: 3px;
+    transition: color 0.25s ease;
+}
+
+nav.liens a:hover,
+nav.liens a:focus-visible {
+
+    color: #2563EB;
+    border-bottom: 2px solid #2563EB;
+
+}
+
+nav.liens a.active {
+
+    color: #2563EB;
+    font-weight: 700;
+
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+/*Stylisation du bouton mon panier */
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #2563EB;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #1E3A8A;
+    border-color: #000000;
+    transform: scale(1.03);
+}
+
+.menu-burger {
+
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #1E3A8A;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: .3s;
+
+}
+
+.menu-burger:hover {
+
+    background: #E5E7EB;
+
+}
+
+.menu-burger:hover {
+    background: #E5E7EB;
+}
+
+
+/* ================= DEMO FILLER (retirer sur le site final) ================= */
+.demo-space {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 32px;
+    text-align: center;
+    color: #8a8072;
+    font-size: 0.9rem;
+}
+
+/*Stylisation du footer */
+
+footer {
+    background: #F3F4F6;
+    color: #374151;
+}
+
+.rubrique {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px 32px 32px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 48px;
+}
+
+.rubrique-info .logo {
+    margin-bottom: 14px;
+}
+
+.rubrique-info p {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #374151;
+    max-width: 32ch;
+    margin: 0 0 22px;
+}
+
+.rubrique-col h2 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #1E3A8A;
+    margin: 0 0 18px;
+    font-weight: 600;
+}
+
+.rubrique-col ul li {
+    margin-bottom: 12px;
+}
+
+.rubrique-col a {
+    font-size: 0.9rem;
+    color: #374151;
+    transition: .3s;
+}
+
+.rubrique-col a:hover {
+    color: #2563EB;
+    padding-left: 5px;
+}
+
+.rubrique-col address {
+    font-style: normal;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #374151;
+    margin-bottom: 18px;
+}
+
+@media (max-width:768px) {
+
+    .nav-content {
+
+        padding: 16px 20px;
+
+    }
+
+    .liens {
+
+        display: none;
+
+    }
+
+    .btn {
+
+        display: none;
+
+    }
+
+    .menu-burger {
+
+        display: block;
+
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .rubrique {
+
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 40px 20px;
+        text-align: center;
+
+    }
+
+    .rubrique-info p {
+
+        max-width: 100%;
+        margin: auto;
+
+    }
+
+    .rubrique-col {
+
+        text-align: center;
+
+    }
+
+}
+
+/* ==================================================================
+   HERO
+   ================================================================== */
+
+.hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 96px 32px 110px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 48px;
+}
+
+.eyebrow {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-weight: 600;
+    color: #2563EB;
+    margin: 0 0 18px;
+}
+
+.hero-title {
+    font-size: clamp(2.4rem, 4.2vw, 3.6rem);
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    color: #1E3A8A;
+    margin: 0 0 24px;
+}
+
+.hero-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #374151;
+    max-width: 42ch;
+    margin: 0 0 36px;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.hero-actions .btn-primary {
+    padding: 14px 26px;
+}
+
+.lien-souligne {
+    position: relative;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #1E3A8A;
+    padding-bottom: 4px;
+    background-image: linear-gradient(#2563EB, #2563EB);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 100% 1px;
+    transition: color .3s, background-size .3s;
+}
+
+.lien-souligne:hover {
+    color: #2563EB;
+    background-size: 0% 1px;
+}
+
+/* Visuel héro : pile de vêtements pliés, en pur CSS */
+
+.hero-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pile {
+    position: relative;
+    width: 260px;
+    height: 260px;
+}
+
+.feuille {
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(30, 58, 138, 0.14);
+}
+
+.feuille-1 {
+    background: #F3F4F6;
+    transform: rotate(-9deg) translate(-14px, 10px);
+}
+
+.feuille-2 {
+    background: #E5E7EB;
+    transform: rotate(4deg) translate(10px, -6px);
+}
+
+.feuille-3 {
+    background: #2563EB;
+    transform: rotate(-2deg) translate(-2px, -22px);
+}
+
+.feuille-3::after {
+    content: "";
+    position: absolute;
+    left: 22px;
+    right: 22px;
+    top: 30px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.35);
+}
+
+/* ==================================================================
+   CATALOGUE
+   ================================================================== */
+
+.catalogue {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 32px 100px;
+}
+
+.section-head {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.section-head .eyebrow {
+    margin-bottom: 10px;
+}
+
+.section-head h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1E3A8A;
+    margin: 0;
+}
+
+.grille-categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.carte-categorie {
+    position: relative;
+    display: block;
+    aspect-ratio: 3 / 4;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #F3F4F6;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.carte-categorie:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 34px rgba(30, 58, 138, 0.16);
+}
+
+.carte-texture {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(155deg, #E5E7EB 0%, #F3F4F6 55%, #ffffff 100%);
+}
+
+.carte-categorie::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(30, 58, 138, 0.55) 0%, rgba(30, 58, 138, 0) 45%);
+}
+
+.carte-label {
+    position: absolute;
+    left: 20px;
+    bottom: 18px;
+    z-index: 1;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+}
+
+/* ==================================================================
+   RÉASSURANCE
+   ================================================================== */
+
+.rassurance {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 56px 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    border-top: 1px solid #E5E7EB;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.item-rassurance {
+    text-align: center;
+    padding: 0 12px;
+}
+
+.item-rassurance h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1E3A8A;
+    margin: 0 0 8px;
+}
+
+.item-rassurance p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #374151;
+    margin: 0;
+}
+
+/* ==================================================================
+   DÉCLARATION DE MARQUE
+   ================================================================== */
+
+.declaration {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 100px 32px;
+    text-align: center;
+}
+
+.declaration p {
+    font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+    font-weight: 300;
+    line-height: 1.5;
+    color: #1E3A8A;
+    margin: 0 0 20px;
+}
+
+.declaration .signature {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #2563EB;
+}
+
+/* ==================================================================
+   CONTACT CTA
+   ================================================================== */
+
+.contact-cta {
+    max-width: 1200px;
+    margin: 0 32px 80px;
+    padding: 72px 32px;
+    border-radius: 20px;
+    background: #1E3A8A;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media (min-width: 1264px) {
+    .contact-cta {
+        margin: 0 auto 80px;
+    }
+}
+
+.contact-cta h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+
+.contact-cta p {
+    font-size: 0.98rem;
+    color: #DBEAFE;
+    margin: 0 0 30px;
+}
+
+.contact-cta .btn-primary {
+    background: #ffffff;
+    color: #1E3A8A;
+    display: inline-flex;
+}
+
+.contact-cta .btn-primary:hover {
+    background: #F3F4F6;
+    color: #1E3A8A;
+}
+
+/* ==================================================================
+   RESPONSIVE — sections principales
+   ================================================================== */
+
+@media (max-width: 900px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 56px 24px 72px;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        order: -1;
+    }
+
+    .pile {
+        width: 190px;
+        height: 190px;
+    }
+
+    .grille-categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rassurance {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        text-align: center;
+    }
+
+    .declaration {
+        padding: 64px 24px;
+    }
+
+    .contact-cta {
+        margin: 0 20px 60px;
+        padding: 48px 24px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .grille-categories {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
